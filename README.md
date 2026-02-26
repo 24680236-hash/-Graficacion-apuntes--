@@ -1,4 +1,4 @@
-# Graficación por Computadora - Apuntes
+# Graficación  - Apuntes
 
 ## Índice
 
