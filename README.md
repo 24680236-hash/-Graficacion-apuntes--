@@ -131,3 +131,17 @@ El procesamiento de mapas de bits incluye operaciones como:
 - Compresión
 
 Este procesamiento es fundamental en áreas como la edición de imágenes, la visión por computadora y la inteligencia artificial.
+
+# Referencias Bibliográficas
+
+Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (1996). *Computer Graphics: Principles and Practice* (2nd ed.). Addison-Wesley.
+
+Hearn, D., & Baker, M. P. (2011). *Computer Graphics with OpenGL* (4th ed.). Pearson.
+
+Angel, E., & Shreiner, D. (2015). *Interactive Computer Graphics: A Top-Down Approach with WebGL* (7th ed.). Addison-Wesley.
+
+Rogers, D. F. (2001). *Procedural Elements for Computer Graphics* (2nd ed.). McGraw-Hill.
+
+Gonzalez, R. C., & Woods, R. E. (2018). *Digital Image Processing* (4th ed.). Pearson.
+
+Shirley, P., Marschner, S., & others. (2020). *Fundamentals of Computer Graphics* (4th ed.). A K Peters/CRC Press.
