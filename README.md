@@ -1,14 +1,14 @@
 # Graficación por Computadora - Apuntes
 
-##  Índice
+## Índice
 
-1. [1.1 Historia y evolución de la graficación por computadora](#11-historia-y-evolución-de-la-graficación-por-computadora)
-2. [1.2 Áreas de aplicación](#12-áreas-de-aplicación)
-3. [1.3 Aspectos matemáticos de la graficación](#13-aspectos-matemáticos-de-la-graficación)
-4. [1.4 Modelos del color: RGB, CMY, HSV y HSL](#14-modelos-del-color-rgb-cmy-hsv-y-hsl)
-5. [1.5 Representación y trazo de líneas y polígonos](#15-representación-y-trazo-de-líneas-y-polígonos)
-6. [1.5.1 Formatos de imagen](#151-formatos-de-imagen)
-7. [1.6 Procesamiento de mapas de bits](#16-procesamiento-de-mapas-de-bits)
+1.1 Historia y evolución de la graficación por computadora  
+1.2 Áreas de aplicación  
+1.3 Aspectos matemáticos de la graficación  
+1.4 Modelos del color: RGB, CMY, HSV y HSL  
+1.5 Representación y trazo de líneas y polígonos  
+1.5.1 Formatos de imagen  
+1.6 Procesamiento de mapas de bits  
 
 ---
 
@@ -16,212 +16,118 @@
 
 La graficación por computadora es una rama de la informática dedicada a la generación, manipulación y representación de imágenes digitales mediante algoritmos matemáticos y dispositivos electrónicos.
 
-## Evolución histórica
+Sus orígenes se remontan a la década de 1950, cuando las computadoras comenzaron a utilizar pantallas tipo radar para mostrar información visual básica. En ese tiempo solo se podían representar líneas simples y puntos.
 
-### Década de 1950
-- Uso de tubos de rayos catódicos (CRT).
-- Aplicaciones militares y científicas.
-- Visualización básica de datos en radares.
+En 1963, Ivan Sutherland desarrolló Sketchpad, considerado el primer sistema interactivo de gráficos por computadora. Este sistema permitió dibujar figuras directamente en la pantalla usando un lápiz óptico, marcando el inicio del diseño asistido por computadora (CAD).
 
-### Década de 1960
-- Desarrollo de Sketchpad (1963).
-- Inicio del diseño asistido por computadora (CAD).
-- Interacción mediante lápiz óptico.
+Durante los años 70 y 80, la graficación comenzó a expandirse en áreas como la investigación científica, los videojuegos y el diseño industrial. Con el avance del hardware y las tarjetas gráficas, fue posible desarrollar gráficos tridimensionales más complejos.
 
-### Década de 1970
-- Primeros gráficos tridimensionales.
-- Desarrollo de algoritmos de sombreado.
-- Expansión académica.
-
-### Década de 1980
-- Popularización de computadoras personales.
-- Aparición de videojuegos comerciales.
-- Interfaces gráficas de usuario (GUI).
-
-### Década de 1990
-- Modelado y renderizado 3D avanzado.
-- Industria cinematográfica digital.
-- Simulación realista.
-
-### Actualidad
-- Realidad virtual (VR)
-- Realidad aumentada (AR)
-- Motores gráficos en tiempo real
-- Inteligencia artificial aplicada a gráficos
+En la actualidad, la graficación por computadora es fundamental en campos como la animación digital, la realidad virtual, la simulación y la inteligencia artificial.
 
 ---
 
 # 1.2 Áreas de aplicación
 
-La graficación por computadora tiene múltiples aplicaciones:
+La graficación por computadora tiene una gran variedad de aplicaciones en distintos sectores.
 
-## Videojuegos
-- Motores gráficos 2D y 3D.
-- Simulación física.
-- Animación en tiempo real.
+En los videojuegos, permite crear escenarios, personajes y efectos visuales en tiempo real.
 
-## Cine y animación
-- Efectos visuales (VFX).
-- Renderizado fotorrealista.
-- Captura de movimiento.
+En el cine y la animación digital, se utiliza para generar efectos especiales y escenas tridimensionales que no podrían realizarse físicamente.
 
-## Medicina
-- Reconstrucción 3D de órganos.
-- Diagnóstico por imagen.
-- Simulación quirúrgica.
+En la medicina, facilita la visualización de órganos mediante estudios como tomografías y resonancias magnéticas.
 
-## Arquitectura e ingeniería
-- Modelado estructural.
-- Diseño industrial.
-- Simulación de prototipos.
+En arquitectura e ingeniería, permite modelar edificios y estructuras antes de su construcción, reduciendo errores y costos.
 
-## Interfaces gráficas
-- Sistemas operativos.
-- Aplicaciones móviles.
-- Software interactivo.
+También es esencial en las interfaces gráficas de usuario, ya que todos los elementos visuales de un sistema operativo o aplicación son generados mediante técnicas de graficación.
 
 ---
 
 # 1.3 Aspectos matemáticos de la graficación
 
-La base matemática de la graficación incluye:
+La graficación por computadora se fundamenta en principios matemáticos.
 
-- Geometría analítica
-- Álgebra lineal
-- Vectores
-- Matrices
-- Cálculo diferencial
+Se utilizan vectores para representar posiciones y direcciones en el espacio.  
+Las matrices permiten realizar transformaciones sobre los objetos.
 
-## Vectores
+Las transformaciones geométricas básicas son:
 
-Se utilizan para representar:
-- Posición
-- Dirección
-- Velocidad
-- Normales de superficie
+- Traslación: desplazar un objeto de una posición a otra.
+- Rotación: girar un objeto respecto a un eje.
+- Escalamiento: aumentar o disminuir el tamaño.
+- Reflexión: generar una imagen espejo.
 
-## Matrices
-
-Permiten realizar transformaciones como:
-
-- Traslación
-- Rotación
-- Escalamiento
-- Reflexión
-
-En gráficos 3D se utilizan matrices de transformación homogéneas.
-
-## Transformaciones geométricas
-
-Las transformaciones permiten modificar objetos en el espacio sin alterar su estructura básica.
+En gráficos tridimensionales también se emplean conceptos de álgebra lineal y geometría analítica para calcular perspectiva, iluminación y sombreado.
 
 ---
 
-
 # 1.4 Modelos del color: RGB, CMY, HSV y HSL
 
-Los modelos de color permiten representar colores digitalmente según el medio de visualización.
+Los modelos de color permiten representar colores en formato digital dependiendo del dispositivo o aplicación.
 
-## RGB (Red, Green, Blue)
+El modelo RGB (Rojo, Verde y Azul) es un modelo aditivo utilizado en pantallas. Los colores se forman combinando diferentes intensidades de estos tres colores básicos.
 
-- Modelo aditivo.
-- Utilizado en pantallas.
-- Cada color se representa con valores entre 0 y 255.
+El modelo CMY (Cian, Magenta y Amarillo) es un modelo sustractivo utilizado principalmente en impresión.
 
-Ejemplo:
-RGB(255, 0, 0) = Rojo puro.
+El modelo HSV se basa en tres componentes:
+- Matiz (Hue)
+- Saturación
+- Valor o brillo
 
-## CMY (Cian, Magenta, Yellow)
+Este modelo es más intuitivo porque se asemeja a la forma en que el ser humano percibe el color.
 
-- Modelo sustractivo.
-- Utilizado en impresión.
-- Se basa en absorción de luz.
+El modelo HSL es similar al HSV, pero utiliza luminosidad en lugar de valor para representar la intensidad de la luz.
+![WhatsApp Image 2026-02-25 at 22 20 14](https://github.com/user-attachments/assets/e3d72ac0-f55a-472c-8fa2-265b22abdcc2)
 
-## HSV (Hue, Saturation, Value)
+![WhatsApp Image 2026-02-25 at 22 20 25](https://github.com/user-attachments/assets/0355883b-c993-4ee5-bc45-3a8efea010ad)
 
-- Hue: Matiz (0° a 360°)
-- Saturation: Intensidad del color
-- Value: Brillo
+<img width="1536" height="1024" alt="ChatGPT Image 25 feb 2026, 10_45_57 p m" src="https://github.com/user-attachments/assets/9735095e-8f22-41c7-9d5d-cd221ef35f92" />
 
-Es más intuitivo para diseño gráfico.
 
-## HSL (Hue, Saturation, Lightness)
-
-Similar al HSV pero utiliza luminosidad en lugar de brillo.
 
 ---
 
 # 1.5 Representación y trazo de líneas y polígonos
 
-En gráficos digitales, los objetos se representan mediante líneas y polígonos.
+En los sistemas digitales, las imágenes están formadas por píxeles. Para representar líneas rectas en una pantalla se utilizan algoritmos específicos.
 
-## Algoritmo DDA
+El algoritmo DDA calcula puntos intermedios entre dos coordenadas para formar una línea.
 
-- Método incremental.
-- Calcula puntos intermedios de una línea.
+El algoritmo de Bresenham es más eficiente, ya que utiliza operaciones enteras y reduce el uso de recursos computacionales.
 
-## Algoritmo de Bresenham
-
-- Más eficiente.
-- Usa únicamente operaciones enteras.
-- Muy utilizado en sistemas gráficos.
-
-## Polígonos
-
-Un polígono está formado por múltiples segmentos de línea.
-
-Se utilizan para:
-- Modelado 2D
-- Modelado 3D
-- Renderizado de superficies
+Los polígonos están formados por múltiples segmentos de línea conectados. Son fundamentales en el modelado 2D y 3D, ya que cualquier objeto complejo puede dividirse en una combinación de polígonos.
 
 ---
 
 # 1.5.1 Formatos de imagen
 
-Los formatos de imagen determinan cómo se almacenan los datos visuales.
+Los formatos de imagen determinan cómo se almacena la información visual.
 
-## JPG
-- Compresión con pérdida.
-- Reduce tamaño del archivo.
+JPG utiliza compresión con pérdida, lo que reduce el tamaño del archivo pero puede disminuir la calidad.
 
-## PNG
-- Compresión sin pérdida.
-- Soporta transparencia.
+PNG utiliza compresión sin pérdida y permite transparencia.
 
-## GIF
-- Permite animaciones simples.
-- Limitado a 256 colores.
+GIF permite animaciones simples, aunque tiene una limitación en la cantidad de colores.
 
-## BMP
-- Sin compresión.
-- Alta calidad pero gran tamaño.
+BMP no utiliza compresión, por lo que genera archivos de gran tamaño.
 
-## TIFF
-- Alta calidad.
-- Usado en impresión profesional.
+TIFF es utilizado en impresión profesional debido a su alta calidad.
+![WhatsApp Image 2026-02-25 at 20 10 16](https://github.com/user-attachments/assets/97e08105-dce6-440e-89f3-cf1c64abdcb5)
+![WhatsApp Image 2026-02-25 at 20 10 52](https://github.com/user-attachments/assets/f1d224fc-4797-4829-964a-07a31666c589)
 
 ---
 
 # 1.6 Procesamiento de mapas de bits
 
-Un mapa de bits está compuesto por una matriz de píxeles.
+Un mapa de bits es una imagen compuesta por una matriz de píxeles.
 
-Cada píxel contiene información de color.
+Cada píxel almacena información de color, y la calidad de la imagen depende de la resolución y la profundidad de color.
 
-## Operaciones básicas
+El procesamiento de mapas de bits incluye operaciones como:
 
-- Ajuste de brillo
-- Contraste
-- Filtros
+- Ajuste de brillo y contraste
+- Aplicación de filtros
 - Detección de bordes
-- Escalado
-- Rotación
+- Escalado y rotación
 - Compresión
 
-El procesamiento de mapas de bits es esencial en:
-
-- Edición de imágenes
-- Visión por computadora
-- Reconocimiento de patrones
-- Inteligencia artificial
+Este procesamiento es fundamental en áreas como la edición de imágenes, la visión por computadora y la inteligencia artificial.
